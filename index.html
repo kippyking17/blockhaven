@@ -28,3 +28,17 @@
   <iframe src="https://blockhaven-caleb.mapleclove16.chatgpt.site/?room=2323" allowfullscreen></iframe>
 </body>
 </html>
+<script>
+  // Disable right-click menu
+  document.addEventListener('contextmenu', event => event.preventDefault());
+
+  // Block key combinations like F12, Ctrl+Shift+I, Ctrl+U
+  document.onkeydown = function(e) {
+    if (e.keyCode == 123 || 
+       (e.ctrlKey && e.shiftKey && e.keyCode == 73) || 
+       (e.ctrlKey && e.shiftKey && e.keyCode == 74) || 
+       (e.ctrlKey && e.keyCode == 85)) {
+      return false;
+    }
+  }
+</script>
